@@ -63,27 +63,4 @@ namespace HS_WebAPI.Controllers
             return Ok();
         }
     }
-
-    public class FakeService : IHSService
-    {
-        public Item Add(Item newItem)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Item[] GetAllItems()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Item GetById(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }
