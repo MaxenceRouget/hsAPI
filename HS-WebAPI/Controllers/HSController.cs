@@ -11,6 +11,7 @@ namespace HS_WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class HSController : ControllerBase
     {
         private readonly IHSService _service;
