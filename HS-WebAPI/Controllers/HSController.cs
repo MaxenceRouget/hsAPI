@@ -21,13 +21,6 @@ namespace HS_WebAPI.Controllers
             _service = service;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
         //GET api/getallitems
         [HttpGet]
         public ActionResult<Item[]> Get()
@@ -68,14 +61,6 @@ namespace HS_WebAPI.Controllers
 
             _service.Delete(id);
             return Ok();
-        }
-
-
-        [HttpGet]
-        //GET api/teststring 
-        public string TestString()
-        {
-            return "ok"; 
         }
     }
 
